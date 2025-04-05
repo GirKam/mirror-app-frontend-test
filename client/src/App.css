@@ -1,0 +1,11 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,59 @@
+.posts-container {
+  margin-left: 320px;
+  padding: 20px;
+  width: calc(100% - 320px);
+  flex-grow: 1;
+}
+
+.posts-layout {
+  margin-bottom: 30px;
+}
+
+.posts-layout.grid {
+  display: grid;
+}
+
+.posts-layout.masonry {
+  display: block;
+  column-gap: 20px;
+}
+
+.post-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination button:hover:not(.active) {
+  background: #f0f0f0;
+}
